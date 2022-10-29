@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        //console.log(Boolean(-6));
+
+        //Implement a function countTruthy(arr) that takes an array and returns the number of truthy values
+        //console.log(Boolean(5));
+        //let arr = [2, 0, 8, 9];
+        // function countTruthy(arr) {
+        //     let trueArray = [];
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (Boolean(arr[i]) == true) {
+        //             trueArray.push(arr[i]);
+        //         }                
+        //     }
+        //     return trueArray.length;
+        // }
+        // console.log(countTruthy(['',0,0,undefined,7]));
+        // module.exports = countTruthy  
+        /*------------------  
+            -------------
+        */
+        //Implement a function fizzBuzz(input) that takes a number and retuns: "fizz": if the number is divisible by 3 "buzz": if the number is divisible by 5 "fizzbuzz": if the number is both divisible by 3 and 5 number: if it is not divisible by 3 or 5
+        // function fizzBuzz(input){
+        //     var output = "";
+        //     if (input % 3 == 0 && (input % 5 == 0)) {
+        //         output = "fizzbuzz";
+        //     }else if(input % 5 == 0){
+        //         output = "buzz";
+        //     }else if(input % 3 == 0 ){
+        //         output = "fizz";
+        //     }else if(input > 0 || input < 0){
+        //         output = input;
+        //     }else{
+        //         output = "Please enter a number";
+        //     }
+        //     return output;  
+        // }
+        // console.log(fizzBuzz(6));
+
+        //Implement the function sumMix(arr) that given an array of integers as strings and numbers, returns the sum of the array values as if all were numbers.
+
+        // function sumMix(arr) {
+        //     var newValue = 0;
+        //     for (let i = 0; i < arr.length; i++) {
+        //         newValue += Number(arr[i]);                
+        //     }
+        //     return newValue;
+        // }
+
+        // console.log(sumMix(['3',6,6,0,'5',8,5,'6',2,'0']))
+
+        /*
+        ----------
+        ----------
+        */
+
+        //Implement the function calculateGrade(marks) that takes an array of grades and calculates the average. It should return the average grade by comparing with the grade table 1-49: F 50-59: E 60-69: D 70-79: C 80-89: B 90-100: A
+
+        // function calculateGrade(marks) {
+        //     let total = 0;
+        //     let avg = 0;
+        //     let grade = "";
+        //     for (let i = 0; i < marks.length; i++) {
+        //         total += Number(marks[i]);                
+        //     }
+        //     avg = Math.round(total / marks.length,0);
+        //     if (avg >= 90 && (avg <= 100)) {
+        //         grade = "A";
+        //     }else if(avg >= 80 && (avg <= 89)){
+        //         grade = "B";
+        //     }else if(avg >= 70 && (avg <= 79)){
+        //         grade = "C";
+        //     }else if(avg >= 60 && (avg <= 69)){
+        //         grade = "D";
+        //     }else if(avg >= 50 && (avg <= 59)){
+        //         grade = "E";
+        //     }else if(avg >= 1 && (avg <= 49)){
+        //         grade = "F";
+        //     }else if(avg == 0){
+        //         grade = "All entries cannot be zero";
+        //     }else{
+        //         grade = "Invalid array values";
+        //     }
+        //     return grade;
+        // }
+        //console.log(calculateGrade([89, 50, 40, 90, 77]))
+        //console.log(Math.round(23.5,0))
+
+        /*
+            ---------
+            --------
+        */
+       //Implement the function filterList(arr) that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+        function filterList(arr) {
+            var newArray = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (isNaN(arr[i]) == false && typeof(arr[i]) != "string") {
+                    newArray.push(arr[i]);
+                }                               
+            }
+            return newArray;
+        }
+        console.log(filterList([1,2,'aasf','1','123',123]))
+        //console.log(typeof('3'))
+
+    </script>
+</body>
+</html>
